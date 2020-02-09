@@ -2,12 +2,6 @@ library otp_count_down;
 
 import 'dart:async';
 
-// /// A Calculator.
-// class Calculator {
-//   /// Returns [value] plus 1.
-//   int addOne(int value) => value + 1;
-// }
-
 class OTPCountDown {
   String _countDown;
 
