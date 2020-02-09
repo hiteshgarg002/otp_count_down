@@ -1,3 +1,7 @@
+## [1.0.5] - initial release.
+
+* Added README
+
 ## [1.0.4] - initial release.
 
 * Added example
