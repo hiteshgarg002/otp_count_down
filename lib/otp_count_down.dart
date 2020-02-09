@@ -1,12 +1,17 @@
 library otp_count_down;
 
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 
 class OTPCountDown {
   String _countDown;
   Timer _timer;
 
-  OTPCountDown.startOTPTimer(int timeInMS, void callBack(String countDown)) {
+  OTPCountDown.startOTPTimer({
+    @required int timeInMS,
+    @required void currentCountDown(String countDown),
+    @required void onFinish(),
+  }) {
     _timer = Timer.periodic(Duration(milliseconds: 1000), (Timer timer) {
       timeInMS -= 1000;
       Duration duration = Duration(milliseconds: timeInMS);
@@ -22,8 +27,10 @@ class OTPCountDown {
         _countDown = "0${duration.inMinutes}:$secondsInString";
       }
 
-      callBack(_getCountDown);
+      currentCountDown(_getCountDown);
+
       if (duration.inSeconds == 0) {
+        onFinish();
         timer.cancel();
       }
     });
