@@ -1,3 +1,7 @@
+## [1.0.4] - initial release.
+
+* Added example
+
 ## [1.0.3] - initial release.
 
 * Added onFinish callback
