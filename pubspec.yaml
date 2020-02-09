@@ -2,7 +2,7 @@ name: otp_count_down
 description: A dart package for easy implementation of OTP count down.
 version: 0.0.1
 author: Hitesh Garg <hiteshgarg02@gmail.com>
-homepage: 
+homepage: https://github.com/hiteshgarg002/otp_count_down
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
