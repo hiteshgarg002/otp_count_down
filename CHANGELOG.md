@@ -1,3 +1,8 @@
+## [1.0.6] - initial release.
+
+* FIXED minor bugs
+* Added Licence
+
 ## [1.0.5] - initial release.
 
 * Added README
